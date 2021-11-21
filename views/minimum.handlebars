@@ -1,0 +1,33 @@
+<div class="container">
+    <form id="data" action="/calculateMinimumBills" method="post">
+        <h3>Mínimo de notas</h3>
+        <fieldset>
+            <p>Digite um valor para que o sistema possa calcular a quantidade mínima de notas para se pagar essa quantidade. O sistema só utiliza notas de 1, 10 e 100.</p>
+            <p>Formato válido: 100,50 ou 100.50</p>
+        </fieldset>
+        <fieldset>
+            <input type="number" min="0.00" name="quantMoney" step="0.01" required/> 
+            </fieldset>
+        <fieldset>
+            <button id="btnSubmit" name="submit" type="submit" id="data-submit"
+                data-submit="...Sending">Calcular</button>
+        </fieldset>
+
+        {{#if quantMoneyBills}}
+        <fieldset>
+            <div>
+                <h3>Quantidade mínima para se pagar {{originalValue}}:</h3>
+                <p>NOTAS DE 100: {{oneHundredBills}}</p>
+                <p>NOTAS DE 10: {{tenBills}}</p>
+                <p>NOTAS DE 1: {{oneBills}}</p>
+                <p>TROCO: {{changeMoney}}</p>
+            </div>
+
+        </fieldset>
+        {{/if}}
+         <fieldset style="text-align: center;">
+            <a href="/">Voltar pro menu</a>
+        </fieldset>
+    </form>
+
+</div>

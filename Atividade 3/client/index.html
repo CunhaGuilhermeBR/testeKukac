@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Kukac - Atividade 3</title>
+    <link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <form id="data" action="/api/vehicles" method="post">
+            <h3>Coleta de dados por CEP</h3>
+
+            <fieldset>
+                <input id="modelInput" name="model" placeholder="Modelo" type="text" tabindex="1" required>
+            </fieldset>
+            <fieldset>
+                <input id="yearInput" max="2021" name="fabricationYear" placeholder="Ano de fabricação" type="number" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input id="doorsInput" name="doors" placeholder="Quantidade de portas" type="number" min="1" max="4" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input id="fabricantInput" name="fabricant" placeholder="Marca" type="text" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <input id="passengersInput" name="passengers" placeholder="Número de passageiros" type="text" min="1" max="5" tabindex="5" required>
+            </fieldset>
+            <fieldset>
+                <select name="type" id="type">
+                    <option value="car">Carro</option>
+                    <option value="motorcycle">Moto</option>
+                  </select>
+            </fieldset>
+            <fieldset>
+                <button id="btnSubmit" name="submit" type="submit" id="data-submit" data-submit="...Sending">Enviar</button>
+            </fieldset>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

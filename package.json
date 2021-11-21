@@ -1,0 +1,25 @@
+{
+    "name": "rendapercapita",
+    "version": "1.0.0",
+    "description": "Um formulário para calcular a renda per capita das pessoas.",
+    "main": "app.js",
+    "dependencies": {
+        "alert": "^5.0.10",
+        "axios": "^0.24.0",
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^6.0.1",
+        "handlebars": "^4.7.7",
+        "save": "^2.4.0",
+        "tape": "^5.3.2"
+    },
+    "devDependencies": {
+        "add": "^2.0.6"
+    },
+    "scripts": {
+        "test": "node index.test",
+        "start": "node app.js"
+    },
+    "author": "Guilherme Augusto Gomes Cunha",
+    "license": "ISC"
+}
