@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const alert = require('alert')
-const actions = require('../methods/actions')
+const actions = require('../methods/cepActions')
 const palindromeActions = require('../methods/palindromeActions')
 const quantBillsActions = require('../methods/quantBillsActions')
 
