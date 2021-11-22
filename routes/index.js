@@ -33,6 +33,7 @@ router.get('/minimum', (req, res) => { res.render('minimum') })
 router.post('/calculateMinimumBills', (req, res) => {
     if (quantBillsActions.validateMoney(req.body.quantMoney)) {
         quantBills = quantBillsActions.getQuantBills(req.body.quantMoney)
+        console.log('Bills ' + quantBills)
         res.render('minimum', {
             quantMoneyBills: true,
             oneHundredBills: quantBills[0],

@@ -25,8 +25,7 @@ var functions = {
             number = 0
         }
 
-        quantBills = [quantOneHundred, quantTen, quantOne, exchange]
-        return quantBills
+        return [quantOneHundred, quantTen, quantOne, exchange]
 
     },
     validateMoney(number) {
